@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+    <h1>Formulário de Pesquisa de Satisfação</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <p>1. Você está satisfeito com nosso atendimento?</p>
+            <input type="radio" id="atendimento1" name="atendimento" value="Sim" required>
+            <label for="atendimento1">Sim</label><br>
+            <input type="radio" id="atendimento2" name="atendimento" value="Não">
+            <label for="atendimento2">Não</label><br><br>
+
+            <p>2. Você recomendaria nossa empresa para outras pessoas?</p>
+            <input type="radio" id="recomenda1" name="recomenda" value="Sim" required>
+            <label for="recomenda1">Sim</label><br>
+            <input type="radio" id="recomenda2" name="recomenda" value="Não">
+            <label for="recomenda2">Não</label><br><br>
+
+            <p>3. Como você avalia a qualidade de nossos serviços?</p>
+            <select name="qualidade" id="qualidade" required>
+                <option value="">Selecione...</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Boa">Boa</option>
+                <option value="Regular">Regular</option>
+                <option value="Ruim">Ruim</option>
+            </select><br><br>
+
+            <input type="checkbox" id="compartilhar" name="compartilhar">
+            <label for="compartilhar">Autorizo compartilhar minha resposta com terceiros</label><br><br>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
